@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet"
+    android:backgroundTint="@color/colorLightBeige"
+    android:padding="@dimen/dimen20dp"
+    tools:context=".ui.OptionsFragment">
+
+    <RelativeLayout
+        android:id="@+id/optionsHeading_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/closeOption_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/baseline_close_24" />
+
+        <TextView
+            android:id="@+id/optionHeading_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/closeOption_iv"
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:fontFamily="@font/lexend_bold"
+            android:text="Would you like to repeat last customization?"
+            android:textColor="@color/colorHeading"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/optionValue_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/optionHeading_tv"
+            android:layout_marginTop="@dimen/dimen20dp"
+            android:fontFamily="@font/lexend_medium"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/customize_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/optionsHeading_rl"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button_30px"
+        android:fontFamily="@font/lexend_regular"
+        android:text="Customize"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:backgroundTint="@color/colorBlueBtn"
+        app:iconGravity="textStart" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/repeat_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/customize_btn"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_button_30px"
+        android:fontFamily="@font/lexend_regular"
+        android:text="Repeat"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:backgroundTint="@color/coinsMain"
+        app:iconGravity="textStart" />
+
+</RelativeLayout>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen20dp"
+    tools:context=".ui.ViewCartFragment">
+
+    <ImageView
+        android:id="@+id/backFromCart_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_ios_24" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/checkOutBtn"
+        android:layout_below="@id/backFromCart_iv"
+        android:layout_marginTop="@dimen/dimen20dp"
+        android:layout_marginBottom="@dimen/dimen20dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/checkOutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_button_30px"
+        android:fontFamily="@font/lexend_regular"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:backgroundTint="@color/colorBlueBtn"
+        app:icon="@drawable/baseline_shopping_cart_24"
+        app:iconGravity="textStart" />
+
+</RelativeLayout>
